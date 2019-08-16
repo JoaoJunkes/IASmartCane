@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<PyBrain>
+	<Network class="pybrain.structure.networks.feedforward.FeedForwardNetwork" name="FeedForwardNetwork-26">
+		<name val="'FeedForwardNetwork-26'"/>
+		<Modules>
+			<LinearLayer class="pybrain.structure.modules.linearlayer.LinearLayer" inmodule="True" name="in">
+				<name val="'in'"/>
+				<dim val="3"/>
+			</LinearLayer>
+			<LinearLayer class="pybrain.structure.modules.linearlayer.LinearLayer" name="out" outmodule="True">
+				<name val="'out'"/>
+				<dim val="1"/>
+			</LinearLayer>
+			<BiasUnit class="pybrain.structure.modules.biasunit.BiasUnit" name="bias">
+				<name val="'bias'"/>
+			</BiasUnit>
+			<SigmoidLayer class="pybrain.structure.modules.sigmoidlayer.SigmoidLayer" name="hidden0">
+				<name val="'hidden0'"/>
+				<dim val="4"/>
+			</SigmoidLayer>
+		</Modules>
+		<Connections>
+			<FullConnection class="pybrain.structure.connections.full.FullConnection" name="FullConnection-22">
+				<inmod val="bias"/>
+				<outmod val="out"/>
+				<Parameters>[2.1487124612239]</Parameters>
+			</FullConnection>
+			<FullConnection class="pybrain.structure.connections.full.FullConnection" name="FullConnection-23">
+				<inmod val="bias"/>
+				<outmod val="hidden0"/>
+				<Parameters>[-3.4158913498931414, -1.9927603255855957, -1.5807917665584337, 1.1517228066994367]</Parameters>
+			</FullConnection>
+			<FullConnection class="pybrain.structure.connections.full.FullConnection" name="FullConnection-24">
+				<inmod val="in"/>
+				<outmod val="hidden0"/>
+				<Parameters>[-1.321790176512396, 1.1116264508473233, 0.49768661989215207, 2.379966252699895, 1.5843527652107607, 0.028955618178452377, -0.659402847000741, -0.07452889073443009, -1.5943401039814564, -0.7386825641040671, 0.1605647062927489, -1.5331536085633717]</Parameters>
+			</FullConnection>
+			<FullConnection class="pybrain.structure.connections.full.FullConnection" name="FullConnection-25">
+				<inmod val="hidden0"/>
+				<outmod val="out"/>
+				<Parameters>[-0.21790861963259991, 7.449650575918791, -0.8088980472138068, -2.504815039328453]</Parameters>
+			</FullConnection>
+		</Connections>
+	</Network>
+</PyBrain>

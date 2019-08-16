@@ -1,0 +1,3 @@
+import testeChamadaArquivo
+
+testeChamadaArquivo.PrimeiraExecucao()
